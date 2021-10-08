@@ -3,19 +3,14 @@ package com.fretron.contracts
 import com.fretron.service1.*
 import dagger.Component
 
-@Component (modules = [BraavosModule::class])
+@Component
 interface BattleComponent {
-    fun cash() : Cash
 
     fun getWar() : War
 
-//    fun getStarks():Starks
-//
-//    fun getBoltons():Boltons
+    fun getStarks():Starks
 
-    fun getCash():Cash
-
-    fun getSoldier():Soldier
+    fun getBoltons():Boltons
 
 
 }
